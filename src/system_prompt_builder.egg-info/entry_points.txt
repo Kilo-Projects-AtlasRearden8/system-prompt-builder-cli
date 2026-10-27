@@ -1,2 +1,0 @@
-[console_scripts]
-system-prompt-builder = system_prompt_builder.cli:main
