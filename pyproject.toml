@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "system-prompt-builder"
+version = "0.1.0"
+description = "Build, preview, save, and live-test system prompts with variables and mock data against a local OpenAI-compatible endpoint (default Ollama)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+license = { file = "LICENSE" }
+keywords = ["system-prompt", "llm", "ollama", "cli", "prompt-engineering"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+system-prompt-builder = "system_prompt_builder.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
